@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg,#d0f52b,#459345);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,form{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 20vh;
+
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+}
+
+form button{
+    color: #459345;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background-color: #459345;
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width:40%;
+    list-style: none;
+}
+.todo{
+    margin:14px;
+    padding: 5px;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.todo li{
+    flex:1;
+}
+
+.complete-btn,.delete-btn{
+    background-color: #459345;
+    padding: 15px;
+    /* margin: 0.2rem; */
+    cursor: pointer;
+    border: none;
+    outline-color: white;
+}
+.complete-btn{
+    background-color:#d0f52b ;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
